@@ -1,4 +1,7 @@
-<app-header></app-header>
+<app-header
+  (toggleFooterEvt)="toggleFooter($event)"
+  >
+</app-header>
 <app-add-item 
   (itemOut)="addItemList($event)">
 </app-add-item>
@@ -6,6 +9,7 @@
   (showDescription)="enableDescription($event)"
   [itemList]="itemList"
   (deleteOut)="deleteItem($event)"
+  (itemDetailOut)="detailItem($event)"
   >
 </app-display-list>
 <app-error *ngIf="itemList.length ==0">

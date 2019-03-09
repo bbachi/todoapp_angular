@@ -8,7 +8,6 @@ import {
   AfterViewInit,
   AfterViewChecked,
   ViewChild } from '@angular/core';
-import { tick } from '@angular/core/testing';
 import { AppService } from './app.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';

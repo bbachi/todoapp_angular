@@ -9,6 +9,7 @@ import { ModalDirective } from 'ngx-bootstrap/modal';
 export class DisplayCardComponent implements OnInit {
 
   @ViewChild('editModal') editModal: ModalDirective;
+
   constructor() {
     console.log('I am from DisplayCardComponent constructor()!!');
   }
