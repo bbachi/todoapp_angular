@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body" [ngClass]="{ 'bg-info': odd, 'bg-secondary': even }">
+        <div class="row">
+          <div class="col-md-10">{{item.value}}</div>
+          <div class="col-md-1"><button type="button" class="btn btn-warning" (click)="editItem(item)">Edit</button></div>
+          <div class="col-md-1"><button (click)="delectedItem(item)" type="button" class="btn btn-danger">Delete</button></div>
+        </div>
+    </div>
+  </div>
+  </div>
